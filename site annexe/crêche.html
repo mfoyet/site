@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crèche LES PHILIPPIENS </title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e41111;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #81D4FA; /* Bleu clair accueillant */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            margin-top: 10px;
+        }
+        nav li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        .hero {
+            background: url('hero-image.jpg') center/cover no-repeat; /* Image d'accueil attrayante */
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+        }
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        section {
+            padding: 30px 0;
+            border-bottom: 1px solid #eee;
+            overflow: auto; /* Pour gérer le flottement des images */
+        }
+        section:last-child {
+            border-bottom: none;
+        }
+        h2 {
+            color: #4CAF50; /* Vert chaleureux */
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .section-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+        }
+        .section-content > div {
+            flex: 1 1 300px; /* Ajustez la largeur minimale selon vos besoins */
+        }
+        .section-content img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            object-fit: cover; /* Pour que l'image remplisse le conteneur sans distorsion */
+        }
+        .services-list {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            text-align: center;
+        }
+        .service-item {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.05);
+        }
+        .service-item img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            text-align: center;
+        }
+        .team-member {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+        .gallery-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+            object-fit: cover;
+            aspect-ratio: 16/9; /* Ratio d'aspect pour garder une certaine cohérence */
+        }
+        .contact-info {
+            text-align: center;
+        }
+        .contact-info p {
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #81D4FA;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: sticky;
+            bottom: 0;
+            width: 100%;
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 80px 0;
+            }
+            .hero h1 {
+                font-size: 2em;
+            }
+            .hero p {
+                font-size: 1em;
+            }
+            .section-content {
+                flex-direction: column;
+            }
+            .section-content > div {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Crèche LES PHILIPPIENS</h1>
+        <nav>
+            <ul>
+                <li><a href="#presentation">Présentation</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#activites">Activités</a></li>
+                <li><a href="#equipe">Notre Équipe</a></li>
+                <li><a href="#galerie">Galerie</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Bienvenue dans notre monde de joie !</h1>
+            <p>Un environnement stimulant et sécurisé pour l'épanouissement de vos enfants.</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <section id="presentation">
+            <h2>Notre Philosophie</h2>
+            <div class="section-content">
+                <div>
+                    <p>Chez LES PHILIPPIENS , nous croyons en l'importance d'une approche personnalisée pour chaque enfant. Notre équipe dévouée s'engage à créer un environnement où la curiosité est encouragée, l'apprentissage est ludique et chaque enfant se sent valorisé et en sécurité.</p>
+                    <p>Nous mettons l'accent sur le développement social, émotionnel, cognitif et moteur des enfants à travers des activités variées et adaptées à leur âge.</p>
+                </div>
+                <img src="c:\Users\LOUIS.P\Pictures\images.jpg" alt="Intérieur chaleureux de la crèche">
+            </div>
+        </section>
+
+        <section id="services">
+            <h2>Nos Services</h2>
+            <ul class="services-list">
+                <li class="service-item">
+                    <img src="C:\Users\LOUIS.P\Downloads\Garde Flexible d'une crêche.jpg" alt="Garde à temps plein et partiel">
+                    <h3>Garde Flexible</h3>
+                    <p>Solutions de garde à temps plein et à temps partiel pour s'adapter à votre emploi du temps.</p>
+                </li>
+                <li class="service-item">
+                    <img src="C:\Users\LOUIS.P\Downloads\Repas Sains.jpg" alt="Repas équilibrés">
+                    <h3>Repas Sains</h3>
+                    <p>Des repas équilibrés et nutritifs préparés quotidiennement avec des ingrédients frais.</p>
+                </li>
+                <li class="service-item">
+                    <img src="C:\Users\LOUIS.P\Downloads\Coin Sieste Confortable d'une crêche 1.jpg" alt="Espace de sieste">
+                    <h3>Coin Sieste Confortable</h3>
+                    <p>Des espaces de repos calmes et sécurisés pour les siestes réparatrices.</p>
+                </li>
+                <li class="service-item">
+                    <img src="C:\Users\LOUIS.P\Downloads\Activités Éducatives.jpg" alt="Activités d'éveil">
+                    <h3>Activités Éducatives</h3>
+                    <p>Un programme riche en activités d'éveil pour stimuler la créativité et l'apprentissage.</p>
+                </li>
+                <li class="service-item">
+                    <img src="C:\Users\LOUIS.P\Downloads\Suivi Individualisé.jpg" alt="Suivi personnalisé">
+                    <h3>Suivi Individualisé</h3>
+                    <p>Un suivi attentif du développement de chaque enfant et une communication régulière avec les parents.</p>
+                </li>
+                <li class="service-item">
+                    <img src="C:\Users\LOUIS.P\Downloads\Espace Extérieur.jpg" alt="Espace extérieur sécurisé">
+                    <h3>Espace Extérieur</h3>
+                    <p>Un espace extérieur sécurisé pour les jeux et les activités de plein air.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="activites">
+            <h2>Nos Activités Quotidiennes</h2>
+            <div class="section-content">
+                <img src="C:\Users\LOUIS.P\Downloads\Ateliers Créatifs.jpg" alt="Enfants peignant">
+                <div>
+                    <h3>Ateliers Créatifs</h3>
+                    <p>Des ateliers de peinture, de dessin, de modelage et de bricolage pour encourager l'expression artistique.</p>
+                </div>
+            </div>
+            <div class="section-content">
+                <div>
+                    <h3>Jeux et Apprentissage</h3>
+                    <p>Des jeux de construction, des puzzles et des activités ludiques pour développer la motricité et la logique.</p>
+                </div>
+                <img src="C:\Users\LOUIS.P\Downloads\Jeux et Apprentissage.jpg" alt="Enfants jouant avec des blocs">
+            </div>
+            <div class="section-content">
+                <img src="C:\Users\LOUIS.P\Downloads\musique.jpg" alt="Heure du conte">
+                <div>
+                    <h3>Lecture et Musique</h3>
+                    <p>Des moments de lecture de contes, des chansons et des comptines pour stimuler l'imagination et le langage.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="equipe">
+            <h2>Notre Équipe Chaleureuse</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="D:\TOFS\IMG-20250212-WA0055.jpg" alt="Nom de l'éducateur ">
+                    <h3>NGO BASSECK GRÂCE</h3>
+                    <p>Éducatrice de jeunes enfants</p>
+                </div>
+                <div class="team-member">
+                    <img src="D:\TOFS\IMG-20250212-WA0051.jpg" alt="Nom de l'auxiliaire ">
+                    <h3>WOPIWO KAZART</h3>
+                    <p>Auxiliaire de puériculture</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="galerie">
+            <h2>Galerie de Photos</h2>
+            <div class="gallery-grid">
+                <img src="C:\Users\LOUIS.P\Pictures\téléchargement (3).jpg" alt="Enfants souriants">
+                <img src="C:\Users\LOUIS.P\Pictures\téléchargement (1).jpg" alt="Salle de jeux colorée">
+                <img src="C:\Users\LOUIS.P\Pictures\téléchargement.jpg" alt="Activité en extérieur">
+                <img src="C:\Users\LOUIS.P\Pictures\téléchargement (2).jpg" alt="Moment de calme et de lecture">
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contactez-nous</h2>
+            <div class="contact-info">
+                <img src="C:\Users\LOUIS.P\Pictures\images.jpg" alt="Façade de la crèche" style="width: 200px; border-radius: 8px; margin-bottom: 20px;">
+                <p><strong>Adresse :</strong> BP: 45 Ydé</p>
+                <p><strong>Téléphone :</strong> +237 681805691</p>
+                <p><strong>Email :</strong> <a href="mailto:liboumphilippe01@gmail.com">liboumphilippe01@gmail.com</a></p>
+                <p>N'hésitez pas à nous contacter pour toute question ou pour organiser une visite !</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 LES PHILIPPIENS . Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

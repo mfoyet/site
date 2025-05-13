@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Mon panier - crèche BabyDream's</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+</head>
+<body>
+	<header>
+		<h1>Mon panier</h1>
+		<nav>
+			<ul>
+				<li><a href="premiere page.html">Accueil</a></li>
+				<li><a href="produis.html">Nos services</a></li>
+				<li><a href="contacts.html">Contacts</a></li>
+				<li><a href="crêche.html">Crèche annexe</a> </li>
+			</ul>
+		</nav>
+		<button onclick="viderlepanier()">Vider le panier</button>
+	</header>
+	<main class="panier fade-in">
+		<h2>Articles sélectionnés</h2>
+		<ul id="liste-panier" class="panier-liste">
+			<p>Votre panier est vide pour l'instant.</p>
+		</ul>
+	</main>
+		
+			<strong>total :</strong>
+			<span id="total"></span>Fcfa
+		</p>
+	</main>
+	<script>
+		const panier = JSON.parse(localStorage.getltem('panier')) || [];
+		const listPanier = document.getElementsByTagName('liste-Panier');
+		const totalElement = document.getElementsByTagName('total');
+		let total = 0;
+		panier.forEach((article, index)=>{
+			const li = document.createElement('li');
+			li.textContent = article.com-{article.prix} Fcfa
+			listPanier.appendChild(li);
+			total += article.prix;
+		});
+		totalElement.textContent = total;
+	</script>
+	<footer>
+		<h5><p>&copy; 2025 BabyDream's - Tous droits réservés</p></h5>
+	</footer>
+</body>
+</html>
